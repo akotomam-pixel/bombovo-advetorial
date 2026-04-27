@@ -9,6 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1406524862988780');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1406524862988780&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- ViewContent Event -->
+    <script>
+    fbq('track', 'ViewContent', {
+        content_name: 'Advertorial - Letne tabory',
+        currency: 'EUR',
+        value: 360
+    });
+    </script>
+
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -668,7 +695,7 @@
             <p>Ak chcete zľavu využiť, kliknite na tlačidlo nižšie, vyberte si jeden z voľných táborov a zadajte kód <span style="color:#D00000;font-weight:700;">„LT2026"</span> pri vyplnení registračného formulára.</p>
             <p class="offer-note"><strong>P.S. Vzhľadom na vysoký dopyt po táboroch CK Bombovo v roku 2026 je táto zľava dostupná len pre prvých 100 zákazníkov. Odporúčame neváhať a využiť ju čím skôr.</strong></p>
             <div class="cta-btn-wrap" style="margin:18px 0 0;">
-                <a href="https://www.bombovo.sk/letne-tabory" class="cta-btn">Využite zľavu 20€ &rarr;</a>
+                <a href="https://www.bombovo.sk/letne-tabory" class="cta-btn" onclick="fbq('trackCustom', 'CTAClick')">Využite zľavu 20€ &rarr;</a>
             </div>
         </div>
 
@@ -737,7 +764,7 @@
         <p>Neváhajte a zaregistrujte svoje dieťa na letný tábor s kódom <strong style="color:#D00000;">„LT2026"</strong>. Doprajte mu leto, na ktoré bude spomínať do konca života. Uistite sa, že to urobíte čím skôr, kým sa všetky tábory CK Bombovo nevypredajú.</p>
 
         <div class="cta-btn-wrap" style="margin-bottom: 48px;">
-            <a href="https://www.bombovo.sk/letne-tabory" class="cta-btn">Využite zľavu 20€ &rarr;</a>
+            <a href="https://www.bombovo.sk/letne-tabory" class="cta-btn" onclick="fbq('trackCustom', 'CTAClick')">Využite zľavu 20€ &rarr;</a>
         </div>
 
         <!-- ══════════ ARTICLE COMMENTS ══════════ -->
