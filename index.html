@@ -843,5 +843,18 @@
     <span style="text-align:right;">Toto je propagovaný článok. Nie je to spravodajský článok, blogový príspevok ani nezávislá redakčná recenzia.</span>
 </div>
 
+<script>
+(function() {
+    var params = window.location.search;
+    if (!params) return;
+    document.querySelectorAll('a[href*="bombovo.sk"]').forEach(function(a) {
+        var url = new URL(a.href);
+        new URLSearchParams(params).forEach(function(value, key) {
+            url.searchParams.set(key, value);
+        });
+        a.href = url.toString();
+    });
+})();
+</script>
 </body>
 </html>
